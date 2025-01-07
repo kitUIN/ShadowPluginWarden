@@ -96,7 +96,7 @@ def create_pr(assets):
             repo.create_file(**logo_data, branch=new_branch)
         logger.info(f"[{new_branch}]Creating Logo")
         plugin_json[
-            "Logo"] = f"https://raw.githubusercontent.com/kitUIN/{settings.repo_name}/refs/heads/main/{logo_path}"
+            "Logo"] = f"https://raw.githubusercontent.com/{settings.repo_name}/refs/heads/main/{logo_path}"
     flag, mew_plugin_json = any_plugin(raw_plugin_json, plugin_json)
     commit_message = f"{'Update' if flag else 'Create'} Plugin: {plugin_id} v{plugin_version}"
 
