@@ -16,6 +16,7 @@ pydantic = {extras = ["dotenv"], version = "^2.10.4"}
 pydantic-settings = "^2.7.1"
 loguru = "^0.7.3"
 fastapi-swagger = "^0.2.16"
+sqlalchemy = "^2.0.40"
 
 
 [build-system]
