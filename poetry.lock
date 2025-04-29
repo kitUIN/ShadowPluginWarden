@@ -350,6 +350,20 @@ all = ["email-validator (>=2.0.0)", "fastapi-cli[standard] (>=0.0.5)", "httpx (>
 standard = ["email-validator (>=2.0.0)", "fastapi-cli[standard] (>=0.0.5)", "httpx (>=0.23.0)", "jinja2 (>=2.11.2)", "python-multipart (>=0.0.7)", "uvicorn[standard] (>=0.12.0)"]
 
 [[package]]
+name = "fastapi-swagger"
+version = "0.2.16"
+description = "This plugin updates the FastAPI app to host latest Swagger UI distribution."
+optional = false
+python-versions = "<4.0,>=3.10"
+files = [
+    {file = "fastapi_swagger-0.2.16-py3-none-any.whl", hash = "sha256:4a4d00a60b1899f821de934345edf741e683802b777aae1b9f17efa0a6aa336c"},
+    {file = "fastapi_swagger-0.2.16.tar.gz", hash = "sha256:c65b7126854bcbf5db92757e06453e784238a5cce439397c67fedc12005bbef6"},
+]
+
+[package.dependencies]
+fastapi = ">=0.100"
+
+[[package]]
 name = "h11"
 version = "0.14.0"
 description = "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1"
@@ -821,4 +835,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "101c7e9b73421b971c70478d7c3d16b77d67de592fdd55e9fc01a7f0047ef26a"
+content-hash = "3a11e10cbc62e5c158f1323895239936f002233f55ab2811feaeacabbe63f1a1"
